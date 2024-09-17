@@ -29,7 +29,7 @@
             <a class="nav-link" href="#">Favourite Recipes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">FellowGrubbers</a>
+            <a class="nav-link" href="#">FellowGrubs</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,7 +50,17 @@
       <a href="#"> <button class="btn">Search</button></a>
   </div>
 </nav>
-
+<nav aria-label="breadcrumb"></nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../html/home.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Desserts</li>
+        </ol>
+      </nav>
+  <div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit" id="addRecipe" name="addDish" onclick="window.location.href='../html/NewItem.html'">Add My Dish</button>
+  </div>
+  </div>    
   <div class="flex-container">
       <div class="flex-box" id="cake">
           <div class="front">Chocalicious Lava Cake</div>
@@ -64,9 +74,9 @@
           <div class="front">Tantalising Tiramisu</div>
           <div class="back">Details</div>
       </div>
-      <div class="flex-box" id="dessert">
-          <div class="front">My Go-To Smoothie Bowl</div>
-          <div class="back">Smoothie Bowl Details</div>
+      <div class="flex-box" id="dessert" onclick="window.location.href='../html/lemon-raspberry-cheesecake.html'">
+          <div class="front">Tangy Lemon Raspberry</div>
+          <div class="back">Lemon Raspberry Cheesecake</div>
       </div>
   </div>
   <script>
