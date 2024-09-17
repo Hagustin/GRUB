@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../Assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/CSS/landingpage.css">
+    <title>Add Your Own Recipe</title>
+</head>
+<body>
+    <div class="p-3 mb-2 bg-body-secondary">
+        <main class="container text-center">
+            <section class="row">
+                <section class="col order-last">
+                    <h1>Add Your Own Recipe</h1>
+                    <p>Fill out the form below to add your recipe!</p>
+                    <form class="row g-3 needs-validation" id="signupForm" enctype="multipart/form-data" novalidate>
+                        <div class="col-md">
+                            <label for="validationCustom01" class="form-label">Name Of The Recipe</label>
+                            <input type="text" class="form-control" id="validationCustom01" name="Name Of The Recipe" required>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="col-md">
+                            <label for="validationCustom02" class="form-label">Ingredients</label>
+                            <textarea class="form-control" id="validationCustom02" name="ingredients" rows="5" required></textarea>
+                            <div class="valid-feedback">Nice ingredients!</div>
+                        </div>
+                        <div class="col-md">
+                            <label for="validationMethod" class="form-label">Method</label>
+                            <textarea class="form-control" id="validationMethod" name="method" rows="8" required></textarea>
+                        </div>
+                        <div class="col-md">
+                            <label for="validationTime" class="form-label">Cooking Time</label>
+                            <input type="text" class="form-control" id="validationTime" name="cooking_time" required>
+                        </div>
+                        <div class="col-md">
+                            <label for="recipeImage" class="form-label">Upload Image</label>
+                            <input type="file" class="form-control" id="recipeImage" name="recipe_image" accept="image/*" required>
+                            <div class="valid-feedback">Image ready!</div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit" id="signupButton" name="addDish">Add My Dish</button>
+                        </div>
+                    </form>
+                </section>    
+            </section>
+        </main>
+    </div>
+    
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const recipeName = document.getElementById('validationCustom01').value;
+            const ingredients = document.getElementById('validationCustom02').value;
+            const method = document.getElementById('validationMethod').value;
+            const cookingTime = document.getElementById('validationTime').value;
+            const imageFile = document.getElementById('recipeImage').files[0];
+            const newRecipe = {
+                name: recipeName,
+                ingredients: ingredients,
+                method: method,
+                time: cookingTime
+            };
+            const reader = new FileReader();
+            reader.onloadend = function() {
+                newRecipe.image = reader.result;
+                const existingRecipes = JSON.parse(localStorage.getItem('recipes')) || [];
+                existingRecipes.push(newRecipe);
+                localStorage.setItem('recipes', JSON.stringify(existingRecipes));
+                window.location.href = 'dessert_specific_page.html';
+            };
+            if (imageFile) {
+                reader.readAsDataURL(imageFile);
+            }
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>Grub.com</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Trending Recipes</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
