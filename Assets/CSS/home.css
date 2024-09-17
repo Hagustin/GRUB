@@ -3,7 +3,7 @@ Add a hover effect to the text */
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
