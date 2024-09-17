@@ -1,7 +1,7 @@
 # Project-1-Grub
 
 ## Description
-Grub is an app where like-minded individuals who have a passion for cooking can showcasea and share their favourite recipes. Its aim is to provide homecooks with a place where they can collaborate on recipe ideas, provide ideas for improvement or suggestions for recipe changes. It covers a wide variety of audiences who hold a common desire - cooking!
+Grub is an app where like-minded individuals who have a passion for cooking can showcase and share their favourite recipes. Its aim is to provide homecooks with a place where they can collaborate on recipe ideas, provide ideas for improvement or suggestions for recipe changes. It covers a wide variety of audiences who hold a common desire - cooking!
 
 ## Installation
 ***What are the steps required to install your project? - THIS STILL TO BE WRITTEN***
