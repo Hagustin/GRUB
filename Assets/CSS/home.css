@@ -4,44 +4,18 @@ Add a hover effect to the text */
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
+}
+
+body{
     box-sizing: border-box;
-    background-color: rgb(223, 222, 222);
-}
-/*
-ul{
-    display: inline;
-    background-color: aqua;
+    width: 100%;
 }
 
-li{
-    list-style: none;
-}
-
-/*.account-navbar{ /* use bootstrap styling for this 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    background-color: rgb(0, 255, 255);
-    color: white;
-    /* not finished yet */
-/* } */
-
-.logo{ /* use bootstrap styling for this */
-    display: flex;
+.logo{ 
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-/* .category-navbar{ /* use bootstrap styling for this 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    background-color: rgba(0, 255, 255, 0.87);
-    color: white;
-} */
 
 .search{
     margin: 20px;
@@ -78,7 +52,6 @@ li{
 .flex-box{
     width: 50%;
     height: 200px;
-    /*background: blue;*/
     color: white;
     font-size: 25px;
     text-align: center;
@@ -89,25 +62,25 @@ li{
 #breakfast{
     background-image: url("../Images/homepage_breakfast.jpg");
     height: 200px;
-    width: 500px;
+    width: 700px;
 }
 
 #lunch{
     background-image: url("../Images/homepage_lunch.jpg");
     height: 200px;
-    width: 500px;
+    width: 700px;
 }
 
 #dinner{
     background-image: url("../Images/homepage_dinner.jpg");
     height: 200px;
-    width: 500px;
+    width: 700px;
 }
 
 #dessert{
     background-image: url("../Images/homepage_dessert.webp");
     height: 200px;
-    width: 500px;
+    width: 700px;
 }
 
 #breakfast:hover{

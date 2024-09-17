@@ -1,45 +1,168 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
-        <script src="./Assets/JS/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./Assets/CSS/landingpage.css">
+        <title>Grub.com - log in or sign up</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+=======
+        <!-- Logo on the right hand side of the navbar-->
+       <header>
+        <!--Insert logo here-->
+        <nav nav class="navbar" style="background-color: #e3f2fd;">
+            <section class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./Assets/Images/logo_color_w_trans.png" alt="Logo" width="130" height="150" class="d-inline-block align-text-top">
+              </a>
+        <!--Password and Username LOGIN-->
+              <form class="mb-3 row" action="./html/home.html">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" required>
+                  <label for="floatingInput">Email address </label>
               </div>
-            </div>
+              <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" required>
+                  <label for="floatingPassword">Password</label>
+                  <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember me?</label>
+                  </div>
+                  <button class="container-md" type="submit" id="loginButton" name="login">Login</button>
+                  <a href="forgotpassword.html" class="d-flex justify-content- enter">Forgot Password?</a>
+              </div>
+          </form>
+            </section>
           </nav>
+       </header>  
+
+       <div class="p-3 mb-2 bg-body-secondary">
+        <main class="container text-center">
+            <section class="row">
+              <section class="col order-last">
+                <!--Sign up form-->
+                <h1>Sign up</h1>
+                <p>Not a member yet? Sign up now to get access to all the recipes and blogs!</p>
+                <form class="row g-3 needs-validation" id="signupForm" novalidate>
+                  <ul class="nobullet">
+                      <li class="col-md">
+                          <label for="validationCustom01" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="validationCustom01" name="first_name" required>
+                          <div class="valid-feedback">Sounds like a chef!</div>
+                      </li>
+                      <li class="col-md">
+                          <label for="validationCustom02" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="validationCustom02" name="last_name" required>
+                          <div class="valid-feedback">Yes CHEF!</div>
+                      </li>
+                      <li class="col-md">
+                          <label for="validationEmail" class="form-label">E-mail</label>
+                          <div class="input-group has-validation">
+                              <input type="email" class="form-control" id="validationEmail" name="email" required>
+                          </div>
+                      </li>
+                      <li class="col-md">
+                          <label for="confirmEmail" class="form-label">Confirm E-mail</label>
+                          <div class="input-group has-validation">
+                              <input type="email" class="form-control" id="confirmEmail" name="confirm_email" required>
+                          </div>
+                      </li>
+                      <li class="col-md">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" name="password" required>
+                      </li>
+                      <li class="col-md">
+                          <label for="confirmPassword" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" id="confirmPassword" name="confirm_password" required>
+                      </li>
+                      &nbsp;
+                      <div class="col-12">
+                          <button class="btn btn-primary" type="submit" id="signupButton" name="signup">SIGN UP</button>
+                      </div>
+                  </ul>
+              </form>
+                
+               
+                <!-- First DOM-->
+
+              </section>
+              <section class="col">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./Assets/Images/vecteezy_3d-illustration-of-blue-medical-chat_32480465.png" class="d-block w-100" alt="icon of blue medical and triple dot inside a speech bubble">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Share and connect your food creations to everyone!</h5>
+                            <p>Sign Up now to connect to food lovers around the globe!</p>
+                          </div>
+                    </div>
+                      <div class="carousel-item">
+                        <img src="./Assets/Images/Smilling-chef-hoiding-tray-and-menu-on-transparent-PNG.png" class="d-block w-100" alt="Smilling chef holding tray and menu">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Get access to all the recipes and blogs</h5>
+                            <p>Sign up now to get access to all the recipes and blogs</p>
+                          </div>
+                    </div>
+                      <div class="carousel-item">
+                        <img src="./Assets/Images/vecteezy_high-quality-mouth-watering-delicious-food-image-isolated_47820735.png" class="d-block w-100" alt="Woman taking photo of food with mobile phone">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Share your food creations</h5>
+                            <p>Share your food creations with the world!</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              </section>
+            </section>
+          
+        </main>
+       
+       
+        </div>
+      
+       
+       
+>>>>>>> 433ce7272ef3f7d64e0e084e56a167a681111795
     </body>
+    <script src="./Assets/JS/bootstrap.min.js"></script>
+    <script src="./Assets/JS/landingpage.js">  </script> 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>Grub.com</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Trending recipes</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </html>
