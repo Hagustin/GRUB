@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href=../Assets/CSS/home.css>
-    <link rel="bootstrap" href="./assets/CSS/bootstrap.min.css">
-</html>
-<header>
-    <div>
-        <div class="logo">
-            <img src="#" alt="Grub Logo">
-        </div>
-
-        <nav class="account-navbar">
-          
-
-            <div class="login-menu">
-                <ul>
-                    <li> <a href=#>Friend Requests</a></li> <!--create 'friend requests'-->
-                    <li> <a href=#>Manage Account</a></li> <!--create 'account page'-->
-                    <li> <a href=#>Log Out</a></li> <!--create 'log out page / function'-->
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div>
-        <nav class="category-navbar">
-            <div class="account-menu">
-                <ul>
-                    <li> <a href="home.html">Home</a></li> 
-                    <li> <a href=#>My Recipes</a></li> <!--create 'My Recipes' page-->
-                    <li> <a href=#>My Favourite Recipes</a></li> <!--create 'My Favourite Recipes' page-->
-                    <li> <a href=#>Fellow Grubs</a></li> <!--create 'Fellow Grubs' page-->
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="search">
-        <input class="srch" type="search" name="" placeholder="Type to search">
-        <a href="#"> <button class="btn">Search</button></a>
-    </div>
-</header>
-<div>
-
-</div>
+    <link rel="stylesheet" href="../Assets/CSS/bootstrap.min.css">
+    <script src="../Assets/JS/bootstrap.min.js"></script>
+    <script src="../Assets/JS/bootstrap.min.js"></script>
+    <script src="../Assets/JS/bootstrap.bundle.min.js"></script>
+    </head>
 <body>
-    <div class="flex-container">
-        <div class="flex-box" id="breakfast">
-            Breakfast
-        </div>
-        <div class="flex-box" id="lunch">
-            Lunch
-        </div>
-        <div class="flex-box" id="dinner">
-            Dinner
-        </div>
-        <div class="flex-box" id="dessert">
-            Dessert
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../html/home.html">
+                  <img src="../Assets/Images/logo-smaller.png" alt="logo">
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../html/home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">MyRecipes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Favourite Recipes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FellowGrubbers</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Profile
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Notifications</a></li>
+                      <li><a class="dropdown-item" href="#">Account Settings</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" id="log-out" href="../index.html">Log Out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="search">
+              <input class="srch" type="search" placeholder="Type to search">
+              <a href="#"> <button class="btn">Search</button></a>
+          </div>
+        </nav>
+       
+  <div class="flex-container">
+    <div class="flex-box" id="breakfast" onclick="window.location.href='#'">
+        Breakfast
     </div>
+    <div class="flex-box" id="lunch" onclick="window.location.href='#'">
+            Lunch
+    </div>
+    <div class="flex-box" id="dinner" onclick="window.location.href='#'">
+            Dinner
+    </div>
+    <div class="flex-box" id="dessert" onclick="window.location.href='#'">
+            Dessert
+    </div>
+  </div>
 </body>
+<footer>
+</footer>
+</html>
