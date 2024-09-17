@@ -7,19 +7,55 @@
     <link rel="stylesheet" href="../Assets/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../Assets/CSS/recipes-page.css">
     <script src="../Assets/JS/bootstrap.min.js"></script>
+    <script src="../Assets/JS/bootstrap.bundle.min.js"></script>
     <title>Lemon Raspberry Cheesecake</title>
   </head>
   <body>
     <header>
-        <!--Navigation bar-->
-        <!--Need to link the navigation bar for the website here-->
-        <!--end of Navigation bar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="../html/home.html">
+              <img src="../Assets/Images/logo-smaller.png" alt="logo">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MyRecipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Favourite Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FellowGrubbers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Notifications</a></li>
+                  <li><a class="dropdown-item" href="#">Account Settings</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" id="log-out" href="../index.html">Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="search">
+        <input class="srch" type="search" placeholder="Type to search">
+        <a href="#"> <button class="btn">Search</button></a>
+    </div>
 
         <nav aria-label="breadcrumb"></nav>
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="../html/home.html">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Recipe Categories</a></li>
-              <li class="breadcrumb-item"><a href="#">Desserts</a></li>
+              <li class="breadcrumb-item"><a href="../html/recipe-category">Desserts</a></li>
               <li class="breadcrumb-item active" aria-current="page">Lemon Raspberry Cheesecake</li>
             </ol>
         </nav>
