@@ -9,20 +9,20 @@ To access the GRUB website go to: https://Hagustin.github.io/GRUB.
 ## Usage
 To create an account for first time users simply go to (../index.html) and click on the Register button. Then type in your username and password to gain access to the site.
 
-    [Screenshot of Landing Page] (../assets/images/landingpage.png)
+    ![Screenshot of Landing Page] (../assets/images/landingpage.png)
 
 Once successfully logged in you will find the Grub homepage (../html/home.html) showing navigation to the four (4) recipe categories: Breakfast, Lunch, Dinner, Dessert that you can click on to go to the recipe category. Additionally, you will find the navigation bar at the top that you can also use to navigate to My Recipes, My Favourite Recipes, and the Fellow Grubs - where you can invite your friends to try the Grub app an make their own contributions or connect with existing Grub app account holders (i.e. Fellow Grubs).
 
-    [Screenshot of Home Page] (../assets/images/homepage.png)
+    ![Screenshot of Home Page] (../assets/images/homepage.png)
 
 When you click on a Recipe Category you will find a selection of recipes for that specified category, for example the recipe category for desserts (../html/dessert_specific_page.html). You also have the opportunity to Add Your Own recipe to the Recipe Category by clicking on the "Add My Dish" button.
 
-    [Screenshot of Recipe Category Page] (../assets/images/recipe-category.png)
-    [Screenshot of Add My Dish] (../assets/images/add-my-dish.png)
+    ![Screenshot of Recipe Category Page] (../assets/images/recipe-category.png)
+    ![Screenshot of Add My Dish] (../assets/images/add-my-dish.png)
 
 When on the desserts (or other recipe category) page (../html/lemon-raspberry-cheesecake.html), simply click on a recipe to view the recipe details. Once on the recipe page you will find a list of ingredients and instructions on how to make the recipe.
 
-    [Screenshot of Lemon Raspberry Cheesecake recipe page] (../assets/image/recipe.png)
+    ![Screenshot of Lemon Raspberry Cheesecake recipe page] (../assets/image/recipe.png)
 
 ## Credits
 Special thanks to our collaborators on this Project - secret GRUB foodies at heart!
