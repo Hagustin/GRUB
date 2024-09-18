@@ -89,35 +89,33 @@
             </section>
         </main>
     </div>
-    
     <script>
         document.getElementById('signupForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            const recipeName = document.getElementById('validationCustom01').value;
-            const ingredients = document.getElementById('validationCustom02').value;
-            const method = document.getElementById('validationMethod').value;
-            const cookingTime = document.getElementById('validationTime').value;
-            const imageFile = document.getElementById('recipeImage').files[0];
-            const newRecipe = {
-                name: recipeName,
-                ingredients: ingredients,
-                method: method,
-                time: cookingTime
-            };
-            const reader = new FileReader();
-            reader.onloadend = function() {
-                newRecipe.image = reader.result;
-                const existingRecipes = JSON.parse(localStorage.getItem('recipes')) || [];
-                existingRecipes.push(newRecipe);
-                localStorage.setItem('recipes', JSON.stringify(existingRecipes));
-                window.location.href = 'dessert_specific_page.html';
-            };
-            if (imageFile) {
-                reader.readAsDataURL(imageFile);
-            }
-        });
+    event.preventDefault();
+    const recipeName = document.getElementById('validationCustom01').value;
+    const ingredients = document.getElementById('validationCustom02').value;
+    const method = document.getElementById('validationMethod').value;
+    const cookingTime = document.getElementById('validationTime').value;
+    const imageFile = document.getElementById('recipeImage').files[0];
+    const newRecipe = {
+        name: recipeName,
+        ingredients: ingredients,
+        method: method,
+        time: cookingTime
+    };
+    const reader = new FileReader();
+    reader.onloadend = function() {
+        newRecipe.image = reader.result;
+        const existingRecipes = JSON.parse(localStorage.getItem('recipes')) || [];
+        existingRecipes.push(newRecipe);
+        localStorage.setItem('recipes', JSON.stringify(existingRecipes));
+        window.location.href = 'dessert_specific_page.html';
+    };
+    if (imageFile) {
+        reader.readAsDataURL(imageFile);
+    }
+});
     </script>
-
     <footer>
         <div class="container">
             <div class="row">

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../Assets/CSS/bootstrap.min.css">
     <script src="../Assets/JS/bootstrap.min.js"></script>
     <script src="../Assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="../Assets/JS/dessert_specific.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -79,34 +80,5 @@
           <div class="back">Lemon Raspberry Cheesecake</div>
       </div>
   </div>
-  <script>
-      function loadRecipes() {
-          const flexContainer = document.querySelector('.flex-container');
-          const storedRecipes = JSON.parse(localStorage.getItem('recipes')) || [];
-          storedRecipes.forEach(recipe => {
-              const newFlexBox = document.createElement('div');
-              newFlexBox.classList.add('flex-box');
-              const frontDiv = document.createElement('div');
-              frontDiv.classList.add('front');
-              if (recipe.image) {
-                  const recipeImage = document.createElement('img');
-                  recipeImage.src = recipe.image;
-                  recipeImage.alt = recipe.name;
-                  recipeImage.style.width = '100%';
-                  frontDiv.appendChild(recipeImage);
-              }
-              const recipeName = document.createElement('div');
-              recipeName.textContent = recipe.name;
-              frontDiv.appendChild(recipeName);
-              const backDiv = document.createElement('div');
-              backDiv.classList.add('back');
-              backDiv.textContent = `Ingredients: ${recipe.ingredients} | Method: ${recipe.method} | Time: ${recipe.time}`;
-              newFlexBox.appendChild(frontDiv);
-              newFlexBox.appendChild(backDiv);
-              flexContainer.appendChild(newFlexBox);
-          });
-      }
-      window.onload = loadRecipes;
-  </script>
 </body>
 </html>
