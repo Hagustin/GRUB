@@ -1,12 +1,22 @@
 *{
     box-sizing: border-box;
-    margin: 5px;
-    padding: 5px;
 }
 
 body{
     box-sizing: border-box;
     width: 100%;
+}
+
+footer ul li {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    
 }
 
 .logo{ 
