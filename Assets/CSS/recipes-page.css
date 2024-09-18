@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 body{
@@ -138,7 +140,7 @@ p{
     float: left;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;*/
+    flex-direction: row;
     width: 25%;
     height:var(--bs-card-height);
     color:var(--bs-body-color);
@@ -193,9 +195,8 @@ p{
     main,
     section{
         flex-direction: column;
-    },
+    }
     aside{
         order: 2;
-    },
-    nav,
+    }
 }
