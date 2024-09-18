@@ -4,11 +4,10 @@
 Grub is an app where like-minded individuals who have a passion for cooking can showcase and share their favourite recipes. Its aim is to provide homecooks with a place where they can collaborate on recipe ideas, provide ideas for improvement or suggestions for recipe changes. It covers a wide variety of audiences who hold a common desire - cooking!
 
 ## Installation
-***What are the steps required to install your project? - THIS STILL TO BE WRITTEN***
+To access the GRUB website go to: https://Hagustin.github.io/GRUB.
 
 ## Usage
-***NOTE links to pages and screenshots to be created and linked***
-To create an account for first time users simply go to (../html/landingpage.html) and click on the Register button. Then type in your username and password to gain access to the site.
+To create an account for first time users simply go to (../index.html) and click on the Register button. Then type in your username and password to gain access to the site.
 
     [Screenshot of Landing Page] (../assets/images/landingpage.png)
 
@@ -16,17 +15,14 @@ Once successfully logged in you will find the Grub homepage (../html/home.html) 
 
     [Screenshot of Home Page] (../assets/images/homepage.png)
 
-When you click on a Recipe Category you will find a selection of recipes for that specified category, for example the recipe category for desserts (../html/recipe-categories.html). 
+When you click on a Recipe Category you will find a selection of recipes for that specified category, for example the recipe category for desserts (../html/dessert_specific_page.html). You also have the opportunity to Add Your Own recipe to the Recipe Category by clicking on the "Add My Dish" button.
 
     [Screenshot of Recipe Category Page] (../assets/images/recipe-category.png)
+    [Screenshot of Add My Dish] (../assets/images/add-my-dish.png)
 
-When on the desserts (or other recipe category) page (../html/desserts-category.html), simply click on a recipe to view the recipe details.
+When on the desserts (or other recipe category) page (../html/lemon-raspberry-cheesecake.html), simply click on a recipe to view the recipe details. Once on the recipe page you will find a list of ingredients and instructions on how to make the recipe.
 
-    [Screenshot of Desserts Category Page] (../assets/images/desserts.png)
-
-Once on the recipe page you will find a list of ingredients and instructions on how to make the recipe.
-
-    [Screenshot of Lemon Raspberry Cheesecake recipe page] (../assets/image/lemon-raspberry-cheesecake.html)
+    [Screenshot of Lemon Raspberry Cheesecake recipe page] (../assets/image/recipe.png)
 
 ## Credits
 Special thanks to our collaborators on this Project - secret GRUB foodies at heart!
